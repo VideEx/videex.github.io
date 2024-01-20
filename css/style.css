@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --main-bg-color: #5EA728;
+    --second-bg-color: #FFF;
+
+    --main-title-color: #5EA728;
+    --second-title-color: #fff;
+    --third-title-color: #fff;
+
+    --main-text-color: #000;
+    --second-text-color: #FFF;
+    --third-text-color: #5EA728;
+
+    --box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+
+    --main-button-color: #5EA728;
+    --second-button-color: #FFF;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    max-width: 160px;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 99px;
+
+    color: var(--main-title-color);
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+header {
+    padding: 30px 100px;
+    background: var(--main-bg-color);
+}
+
+header .container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-link {
+    color: var(--second-text-color);
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+
+    text-decoration: none;
+}
+
+.btn.white {
+    background: var(--second-button-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+main .container {
+    display: flex;
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+h1 {
+    color: var(--main-title-color);
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 89.286% */
+}
+
+.main-text {
+    color: var(--main-text-color);
+    text-align: justify;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description-item {
+    color: var(--main-text-color);
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 222.222% */
+    list-style: none;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.description-item::before {
+    content: url("../img/mini-logo.svg");
+    display: inline-block;
+}
+
+.about-camp {
+    background: var(--main-bg-color);
+    padding: 83px 0;
+}
+
+.camp-title {
+    color: #000;
+    text-align: center;
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+    padding: 0 0 60px;
+}
+
+.camp-items {
+    display: flex;
+    padding:0 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 48px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.camp-item {
+    display: flex;
+    width: 300px;
+    /*height: 305px;*/
+    padding: 70px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    border-radius: 30px;
+    background: var(--second-bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.camp-item__img {
+
+}
+
+.camp-item__title {
+    color: var(--main-title-color);
+    font-family: "Blogger Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.camp-item__text {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.program {
+    background: var(--second-bg-color);
+    padding: 83px 0;
+}
+
+.program-title {
+    color: var(--main-title-color);
+    text-align: center;
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+}
+
+.program-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+.program-items {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "program-item__first ."
+    "program-item__first program-item__second"
+    "program-item__third program-item__second"
+    "program-item__third program-item__fourth"
+    ". program-item__fourth";
+}
+
+
+.program-item__first {
+    position: relative;
+    grid-area: program-item__first;
+    place-self: center;
+    padding: 75px 0;
+}
+
+.program-item__second {
+    position: relative;
+    grid-area: program-item__second;
+    place-self: center;
+    padding: 75px 0;
+}
+
+.program-item__third {
+    position: relative;
+    grid-area: program-item__third;
+    place-self: center;
+    padding: 75px 0;
+}
+
+.program-item__fourth {
+    position: relative;
+    grid-area: program-item__fourth;
+    place-self: center;
+    padding: 75px 0;
+}
+
+.program-description {
+    position: absolute;
+
+    display: flex;
+    width: 380px;
+    height: 200px;
+    padding: 15px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    box-shadow: var(--box-shadow);
+}
+
+.program-description.right {
+    background: rgba(255, 255, 255, 0.95);
+    bottom: 45px;
+    left: -100px;
+}
+
+.program-description.left {
+    background: rgba(94, 167, 40, 0.95);
+    bottom: 45px;
+    right: -100px;
+}
+
+.program-description__title {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+
+.program-description__text {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+.left .program-description__title {
+    color: var(--third-title-color);
+}
+
+.left .program-description__text {
+    color: var(--second-text-color);
+}
+
+.right .program-description__title {
+    color: var(--main-title-color);
+}
+
+.right .program-description__text {
+    color: var(--third-text-color);
+}
+
+.program-item__fourth:hover .program-description, .program-item__second:hover .program-description {
+    animation: slowDownLeft 1s forwards;
+}
+
+@keyframes slowDownLeft {
+    0% {
+        bottom: 45px;
+        left: -100px;
+    }
+    100% {
+        bottom: -30px;
+        left: -115px;
+    }
+}
+.program-item__first:hover .program-description, .program-item__third:hover .program-description {
+    animation: slowDownRight 1s forwards;
+}
+
+@keyframes slowDownRight {
+    0% {
+        bottom: 45px;
+        right: -100px;
+    }
+    100% {
+        bottom: -30px;
+        right: -115px;
+    }
+}
+
+.team {
+    background: var(--main-bg-color);
+    padding: 83px 0;
+}
+
+.team-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.team-item {
+    position: relative;
+}
+
+.team-title {
+    color: var(--third-title-color);
+    text-align: center;
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+
+    padding-bottom: 60px;
+}
+
+.team-title__second {
+    width: 200px;
+    padding: 20px 0;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+
+    background: var(--second-bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+
+    border-radius: 15px;
+
+    color: var(--main-title-color);
+
+    font-family: "Blogger Sans",sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.team-img {
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
