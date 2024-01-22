@@ -284,8 +284,8 @@ h1 {
     position: absolute;
 
     display: flex;
-    width: 380px;
-    height: 200px;
+    width: 310px;
+    /*height: 200px;*/
     padding: 15px 30px;
     flex-direction: column;
     justify-content: center;
@@ -328,6 +328,7 @@ h1 {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.6px;
+    /*text-align: justify;*/
 }
 
 .left .program-description__title {
@@ -336,6 +337,8 @@ h1 {
 
 .left .program-description__text {
     color: var(--second-text-color);
+    font-size: 14px;
+
 }
 
 .right .program-description__title {
@@ -344,6 +347,8 @@ h1 {
 
 .right .program-description__text {
     color: var(--third-text-color);
+    font-size: 14px;
+    /*color: var(--third-text-color);*/
 }
 
 

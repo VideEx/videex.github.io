@@ -70,6 +70,14 @@
         --input-font-size: 14px;
     }
 
+    main {
+        padding: 0 15px;
+    }
+
+    main.container {
+        padding-top: 30px;
+    }
+
     .menu-items {
         display: none;
     }
@@ -125,6 +133,10 @@
 
 @media screen and (max-width: 320px) {
 
+    .program-item__fourth, .program-item__first, .program-item__second, .program-item__third {
+        padding: 45px 0;
+    }
+
     .program-description.left {
         bottom: 30px;
         left: 0;
@@ -133,7 +145,17 @@
     .program-description.right {
         bottom: 30px;
         /* right: -21px; */
-        left: 0px;
+        left: 0;
+    }
+
+    @keyframes slowDownLeft {
+        0% {
+
+        }
+        100% {
+            bottom: -30px;
+            left: 0;
+        }
     }
 
 }
