@@ -1,0 +1,26 @@
+.program-item__fourth:hover .program-description, .program-item__second:hover .program-description {
+    animation: slowDownLeft 1s forwards;
+}
+
+@keyframes slowDownLeft {
+    0% {
+
+    }
+    100% {
+        bottom: -30px;
+        left: -115px;
+    }
+}
+.program-item__first:hover .program-description, .program-item__third:hover .program-description {
+    animation: slowDownRight 1s forwards;
+}
+
+@keyframes slowDownRight {
+    0% {
+
+    }
+    100% {
+        bottom: -30px;
+        right: -115px;
+    }
+}

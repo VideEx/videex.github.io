@@ -1,0 +1,139 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .price-item {
+        width: 40vw;
+    }
+
+    .price-action {
+        width: 40vw;
+    }
+
+    form {
+        width: 40vw;
+    }
+
+    textarea, input[type="text"], input[type="number"], input[type="phone"] {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .menu-action {
+        display: none;
+    }
+
+    .program-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-item {
+        width: 70vw;
+    }
+
+    .price-action {
+        width: 70vw;
+    }
+
+    form {
+        width: 70vw;
+    }
+
+    textarea, input[type="text"], input[type="number"], input[type="phone"] {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    * {
+        --btn-font-size: 12px;
+        --title-font-size: 35px;
+        --second-title-font-size: 20px;
+        --text-font-size: 14px;
+        --input-font-size: 14px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    .team-title__second {
+        bottom: 10px;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+
+    .price-item {
+        width: 90vw;
+    }
+
+    .price-action {
+        width: 90vw;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    textarea, input[type="text"], input[type="number"], input[type="phone"] {
+        width: 90vw;
+    }
+
+    .program-description.left {
+        bottom: 20px;
+        right: -30px;
+    }
+
+    .program-description.right {
+        bottom: 73px;
+        /* right: -21px; */
+        left: -41px;
+    }
+
+    .program-item {
+        overflow: hidden;
+    }
+
+    .program-description {
+        width: 300px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .program-description.left {
+        bottom: 30px;
+        left: 0;
+    }
+
+    .program-description.right {
+        bottom: 30px;
+        /* right: -21px; */
+        left: 0px;
+    }
+
+}

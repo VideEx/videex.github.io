@@ -19,6 +19,11 @@
     --main-button-color: #5EA728;
     --second-button-color: #FFF;
 
+    --btn-font-size: 16px;
+    --title-font-size: 50px;
+    --second-title-font-size: 30px;
+    --text-font-size: 18px;
+    --input-font-size: 20px;
 }
 
 .container {
@@ -28,7 +33,7 @@
 
 .btn {
     display: flex;
-    max-width: 160px;
+    max-width: 165px;
     padding: 10px 50px;
     justify-content: center;
     align-items: center;
@@ -38,7 +43,7 @@
 
     color: var(--main-title-color);
     font-family: "Blogger Sans", sans-serif;
-    font-size: 14px;
+    font-size: var(--btn-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -71,7 +76,7 @@ header .container {
     color: var(--second-text-color);
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-size: 16px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -97,7 +102,7 @@ main .container {
 h1 {
     color: var(--main-title-color);
     font-family: "Blogger Sans", sans-serif;
-    font-size: 28px;
+    font-size: var(--second-title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: 25px; /* 89.286% */
@@ -107,7 +112,7 @@ h1 {
     color: var(--main-text-color);
     text-align: justify;
     font-family: Verdana, sans-serif;
-    font-size: 18px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
@@ -122,7 +127,7 @@ h1 {
 .description-item {
     color: var(--main-text-color);
     font-family: Verdana, sans-serif;
-    font-size: 18px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 222.222% */
@@ -150,7 +155,7 @@ h1 {
     color: #000;
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -193,7 +198,7 @@ h1 {
     color: var(--main-title-color);
     font-family: "Blogger Sans", sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: var(--second-title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -203,7 +208,7 @@ h1 {
     color: var(--main-text-color);
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-size: 18px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -219,7 +224,7 @@ h1 {
     color: var(--main-title-color);
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -308,7 +313,7 @@ h1 {
 .program-description__title {
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-size: 28px;
+    font-size: var(--second-title-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -318,7 +323,7 @@ h1 {
 .program-description__text {
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-size: 16px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -341,34 +346,6 @@ h1 {
     color: var(--third-text-color);
 }
 
-.program-item__fourth:hover .program-description, .program-item__second:hover .program-description {
-    animation: slowDownLeft 1s forwards;
-}
-
-@keyframes slowDownLeft {
-    0% {
-        bottom: 45px;
-        left: -100px;
-    }
-    100% {
-        bottom: -30px;
-        left: -115px;
-    }
-}
-.program-item__first:hover .program-description, .program-item__third:hover .program-description {
-    animation: slowDownRight 1s forwards;
-}
-
-@keyframes slowDownRight {
-    0% {
-        bottom: 45px;
-        right: -100px;
-    }
-    100% {
-        bottom: -30px;
-        right: -115px;
-    }
-}
 
 .team {
     background: var(--main-bg-color);
@@ -391,7 +368,7 @@ h1 {
     color: var(--third-title-color);
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -417,7 +394,7 @@ h1 {
     color: var(--main-title-color);
 
     font-family: "Blogger Sans",sans-serif;
-    font-size: 20px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -440,7 +417,7 @@ h1 {
     color: var(--main-title-color);
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -498,7 +475,7 @@ h1 {
 .price-list_item {
     color: #000;
     font-family: Verdana, sans-serif;
-    font-size: 20px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -513,7 +490,7 @@ h1 {
     color: #5EA728;
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 30px;
+    font-size: var(--second-title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -547,7 +524,7 @@ h1 {
     color: var(--second-text-color);
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 25px;
+    font-size: var(--btn-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -567,7 +544,7 @@ h1 {
     color: #000;
     text-align: center;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -591,7 +568,7 @@ textarea, input[type="text"], input[type="number"], input[type="phone"] {
     color: #000;
     text-align: left;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 20px;
+    font-size: var(--input-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -613,7 +590,7 @@ textarea::placeholder, input::placeholder {
     color: #000;
     text-align: left;
     font-family: "Blogger Sans", sans-serif;
-    font-size: 20px;
+    font-size: var(--input-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -663,7 +640,7 @@ footer {
     color: var(--second-text-color);
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-size: 16px;
+    font-size: var(--text-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
